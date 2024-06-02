@@ -1,0 +1,213 @@
+/* Header */
+.header {
+  box-shadow: 0 1px 3px 0 rgba(0, 0, 0, 0.1);
+  background: var(--bg-1);
+  padding: 0 40px;
+}
+
+.header .inner-wrap {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.header .inner-logo a {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.header .inner-logo img {
+  height: 50px;
+  width: auto;
+}
+
+.header .inner-logo span {
+  font-size: 22px;
+  font-weight: 600;
+  color: var(--color-text);
+  margin-left: 10px;
+}
+
+.header .inner-menu ul {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+  display: flex;
+}
+
+.header .inner-menu ul li a {
+  display: inline-flex;
+  padding: 35px 20px;
+  color: var(--color-text);
+  font-size: 18px;
+}
+
+.header .inner-menu ul li a:hover {
+  background: #fff;
+}
+
+.header .inner-social ul {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+  display: flex;
+}
+
+.header .inner-social ul li {
+  margin-left: 10px;
+}
+
+.header .inner-social ul li a {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  width: 60px;
+  height: 60px;
+  border-radius: 5px;
+  background: #fff;
+  font-size: 20px;
+  color: var(--color-text);
+}
+
+.header .inner-social ul li a span {
+  font-size: 10px;
+  margin-top: 5px;
+}
+
+.header .inner-social ul li a:hover {
+  color: blue;
+}
+
+.header .inner-wrap .inner-icon-mobi {
+  font-size: 24px;
+  cursor: pointer;
+  display: none;
+}
+
+@media (max-width:991.98px) {
+  .header {
+    padding: 15px 20px;
+  }
+
+  .header .inner-wrap .inner-icon-mobi {
+    display: block;
+  }
+
+  .header .inner-wrap .inner-menu {
+    display: none;
+  }
+
+  .header .inner-wrap .inner-social {
+    display: none;
+  }
+
+}
+
+/* End Header */
+
+/* Section-one */
+.section-one {
+  background-image: url(../images/cntt_ptit.jpg);
+  background-size: cover;
+  padding: 175px 0;
+  position: relative;
+  background-position: 50% 50%;
+  height: 100vh;
+}
+
+.section-one::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  background: #000;
+  opacity: 0.4;
+  width: 100%;
+  height: 100%;
+}
+
+.section-one .inner-wrap {
+  position: relative;
+}
+
+.section-one .inner-wrap .inner-sub-title {
+  color: #fff;
+  font-size: 20px;
+  margin-bottom: 10px;
+}
+
+.section-one .inner-wrap .inner-title {
+  color: #fff;
+  margin-bottom: 20px;
+}
+
+.section-one .inner-wrap .inner-button {
+  display: flex;
+}
+
+.section-one .inner-wrap .button {
+  margin-right: 10px;
+}
+
+@media (max-width:767.98px) {
+  .section-one .container .inner-wrap {
+    text-align: center;
+  }
+
+  .section-one .container .inner-wrap .inner-buttons .button {
+    margin-bottom: 15px;
+  }
+}
+
+/* End Section-one */
+
+/* Buttons */
+.button {
+  color: var(--color-text);
+  background: #fff;
+  border: 2px solid #fff;
+  padding: 15px 40px;
+  display: inline-flex;
+  align-items: center;
+  border-radius: 10px;
+  font-weight: 600;
+  cursor: pointer;
+}
+
+.button-two {
+  background: var(--color-two);
+  color: var(--color-text);
+  border-color: var(--color-two);
+}
+
+.button-two:hover {
+  background: #fff;
+  border-color: #fff;
+}
+
+.button-two-outline {
+  background: transparent;
+  color: #fff;
+}
+
+.button-two-outline:hover {
+  background: var(--color-two);
+  color: var(--color-text);
+  border-color: var(--color-two);
+}
+
+.button-dark {
+  background: var(--color-text);
+  color: #fff;
+  border-color: var(--color-text);
+}
+
+.button-dark:hover {
+  background: var(--color-two);
+  color: var(--color-text);
+  border-color: var(--color-two);
+}
+
+/* End Buttons */
